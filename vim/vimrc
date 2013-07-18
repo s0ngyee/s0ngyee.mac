@@ -1,0 +1,94 @@
+"   {{{
+"   Description:    bsy 的 vim 配置
+"   Date       :    2012/11/20
+"   Author     :    bsy
+"   Version    :    0.1.0
+"   }}}
+
+"  关闭 vi 兼容模式
+set nocompatible
+
+"  自动语法高亮
+syntax on
+
+"  检测文件类型
+filetype on
+
+"  检测文件类型插件
+filetype plugin on
+
+"  覆盖文件时不备份
+set nobackup
+
+"  不自动换行
+set nowrap
+
+"  搜索时忽略大小写，但在有一个或以上大写字母时仍大小写敏感
+set ignorecase
+set smartcase
+
+"  不设定在插入状态无法用退格键和 Delete 键删除回车符
+"set backspace=indent,eol,start
+"set whichwrap+=<,>,h,l
+
+"set encoding=utf-8
+
+"set fileencoding=utf-8
+
+"  显示行号
+set number
+
+"  上下可视行数
+set scrolloff=6
+
+"  设置 tab 长度为4
+set tabstop=4
+
+"  设置按BackSpace的时候可以一次删除掉4个空格
+set softtabstop=4
+
+"  设置 << 和 >> 命令移动时的宽度为 4
+set shiftwidth=4
+set smarttab
+set history=1024
+
+set expandtab
+
+"  自动切换当前目录为当前文件所在的目录
+set autochdir
+
+"  不突出显示当前行
+"set nocursorline
+
+"  搜索到文件两端时不重新搜索
+"set nowrapscan
+
+"  实时搜索
+set incsearch
+
+"  搜索时高亮显示被找到的文本
+set hlsearch
+
+"  智能自动缩进
+set smartindent
+
+"  设定命令行的行数为 1
+set cmdheight=1
+
+"  显示状态栏 (默认值为 1, 无法显示状态栏)
+set laststatus=2
+
+"  显示括号配对情况
+set showmatch
+
+"  解决自动换行格式下, 如高度在折行之后超过窗口高度结果这一行看不到的问题
+set display=lastline
+
+"  启动时不显示 捐赠提示
+set shortmess=atl
+
+"  设定配色方案
+colorscheme github
+
+"  初始窗口大小
+set columns=120 lines=40
